@@ -1,10 +1,14 @@
 
-# PRODIGY
-This R package prioritize driver genes for individual cancer patients.
+# the PRODIGY experiment on Mycobacterium tuberculosis (MTB) data to find rare mutations confering drug ressistance. 
+The original R package was designed to prioritize driver genes for individual cancer patients. 
 
-The details of the method are described in
+The details of the ORIGINAL method are described in
 Dinstag G. & Shamir R. PRODIGY: personalized prioritization of driver genes. bioRxiv (2018), 
 https://www.biorxiv.org/content/early/2018/10/30/456723
+
+# Experiment rational and motivation (Oren Tzfadia, ITM Sept 2020)
+We wish to currently focus our efforts on searching for drug-resistance rare mutations in the genome of Mycobacterium tuberculosis, by combining whole genome sequencing (WGS) and gene expression profiles (RNAseq), from clinical samples. Such samples (often from sputum), are first cultured for up to 6 weeks, followed by genomic DNA extraction and sequencing. The resulting sequencing output (fastq data files), is then run through standard SNP- calling pipelines. These pipelines first map reads to a reference genome (often M. tuberculosis strain H37Rv) and then call genomic variants, creating a table of SNPs. The resulting SNP lists can then be used for a variety of analyses, such as strain typing, transmission clustering and drug resistance profiling. The results of these tasks are then reported to the end user (for example, a clinician or researcher; see figure 3 at Meehan et al, 2018).
+
 
 ## Package installation
 ```r
