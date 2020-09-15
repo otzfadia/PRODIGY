@@ -19,6 +19,8 @@ In sense of their input requirements, PRODIGY needs to be adjusted for MTB genom
 We have the pathways (Mycobrowser) and PPI networks (STRING https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-018-4873-9), for MTB.
 As for gene expression profiles, we need to keep in mind that proper control for differential expression is expected (it doesn't have to be the same patients of course as long as everything is normalized properly). We have samples from wild type ‘mother’ strains. These were subjected to sub-lethal antibiotics lives, and grew on plate. Then the colonies survived were analysed and found to have resistance mutations. We can extract RNA from both the ‘mother’ strains and the resistance ones (‘daughter’), in addition to the WGS (which already exists in BCCM collection). 
 
+For now, we can use the examples data sets in the PRODIGY git. Then we can use DNA/RAN data from Inaki’s paper (REF). 
+
 ## Package installation
 ```r
 library(devtools)
